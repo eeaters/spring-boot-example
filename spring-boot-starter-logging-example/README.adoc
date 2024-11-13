@@ -1,0 +1,19 @@
+= 日志
+
+== 日志源码
+
+https://github.com/eeaters/spring-boot-example/tree/master/spring-boot-starter-logging-example/源码.md[源码]
+
+== web日志打印
+=== 其他日志打印
+1. 使用AOP打印日志是足够的; 但是jointPoint用起来很麻烦
+2. 使用Filter打印日志也是足够的; 但是request/response流毕竟只能读取一次, 还需要做一个可重用的流
+
+=== 本次日志打印
+1. 对于请求
+- 如果是get请求,使用 `GetRequestParamAdvice` 打印参数
+- 如果是其他请求&使用的 `application/json`, 使用 `RequestBodyLogAdvice` 打印参数
+- 如果是非 `application/json` 忽视
+2. 对于响应
+- 对于使用RequestBody的, 使用 `RequestBodyLogAdvice` 打印参数
+- 如果是非RequestBody的, 使用 `GetRequestParamAdvice` 打印响应

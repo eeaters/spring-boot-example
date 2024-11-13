@@ -14,8 +14,10 @@
     <artifactId>spring-boot-example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>spring-boot-starter-logging-example</module>
+        <module>example-core</module>
     </modules>
 
     <properties>

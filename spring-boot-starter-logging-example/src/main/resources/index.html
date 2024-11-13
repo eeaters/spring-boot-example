@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background: #fff;
+            padding: 10px 24px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: #00a1d6;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 0 0 500px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #e7e7e7;
+            border-radius: 4px;
+        }
+
+        .user-controls {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-tabs {
+            background: #fff;
+            padding: 8px 24px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        .tabs-list {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video-grid {
+            max-width: 1400px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 24px;
+        }
+
+        .video-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-thumbnail {
+            position: relative;
+            padding-top: 56.25%;
+            background: #eee;
+        }
+
+        .video-info {
+            padding: 12px;
+        }
+
+        .video-title {
+            font-size: 14px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: 12px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .upload-btn {
+            background: #fb7299;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">BILIBILI</div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="中级经济师工商管理">
+        </div>
+        <div class="user-controls">
+            <span>大会员</span>
+            <span>消息</span>
+            <span>动态</span>
+            <span>收藏</span>
+            <span>历史</span>
+            <button class="upload-btn">投稿</button>
+        </div>
+    </div>
+</header>
+
+<nav class="nav-tabs">
+    <ul class="tabs-list">
+        <li>动态</li>
+        <li>热门</li>
+        <li>番剧</li>
+        <li>国创</li>
+        <li>综艺</li>
+        <li>动画</li>
+        <li>鬼畜</li>
+        <li>舞蹈</li>
+        <li>娱乐</li>
+        <li>科技</li>
+        <li>美食</li>
+        <li>专栏</li>
+        <li>活动</li>
+    </ul>
+</nav>
+
+<main class="video-grid">
+    <article class="video-card">
+        <div class="video-thumbnail"></div>
+        <div class="video-info">
+            <h3 class="video-title">韩国凭什么是发达国家？我去了一趟才发现...</h3>
+            <div class="video-stats">
+                <span>354.3万播放</span>
+                <span>3万弹幕</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="video-card">
+        <div class="video-thumbnail"></div>
+        <div class="video-info">
+            <h3 class="video-title">【深度】特朗普胜选！美国公务员清除计划启动！</h3>
+            <div class="video-stats">
+                <span>58万播放</span>
+                <span>6098弹幕</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="video-card">
+        <div class="video-thumbnail"></div>
+        <div class="video-info">
+            <h3 class="video-title">走一趟最美川西，快把我累死了！！</h3>
+            <div class="video-stats">
+                <span>77万播放</span>
+                <span>3917弹幕</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="video-card">
+        <div class="video-thumbnail"></div>
+        <div class="video-info">
+            <h3 class="video-title">盖伦断线，铁男：我TM跟你爆了！</h3>
+            <div class="video-stats">
+                <span>8.9万播放</span>
+                <span>689弹幕</span>
+            </div>
+        </div>
+    </article>
+</main>
+</body>
+</html>
